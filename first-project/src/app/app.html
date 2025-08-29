@@ -1,4 +1,4 @@
-<h1>Hello {{ name }}, Welcome to {{ title() }}</h1>
+<!-- <h1>Hello {{ name }}, Welcome to {{ title() }}</h1>
 <h1>{{ 2 + 2 * 2 - 2 }}</h1>
 <h1>{{ x + y }}</h1>
 <h1>{{ x == y }}</h1>
@@ -6,4 +6,44 @@
 <app-login></app-login>
 <app-profile></app-profile>
 
-<button (click)="handleClick()">Click me</button>
+<button (click)="handleClick()">Click me</button> -->
+
+<!-- <app-counter-app></app-counter-app> -->
+<!-- <h1>Welcome to Angular</h1>
+<button class="btn" id="tapas" (click)="handleEvent($event)">Click Me</button>
+
+<br />
+<br /> -->
+
+<!-- <div (click)="handleEvent($event)" style="height: 100px; width: 100px; background-color: red"></div> -->
+<!-- <div (mouseenter)="handleEvent($event)" style="height: 100px; width: 100px; background-color: red"></div> -->
+<!-- <div (mouseleave)="handleEvent($event)" style="height: 100px; width: 100px; background-color: red"></div> -->
+<!-- <div
+  (mouseenter)="handleEvent($event)"
+  style="height: 100px; width: 100px; background-color: red"
+></div> -->
+
+<!-- <input type="text" (blur)="handleEvent($event) (focus)="handleEvent($event)"
+(input)="handleEvent($event)" name="User" /> -->
+
+<h1>Get and Set Input Field</h1>
+<h1>User Name: {{ displayName }}</h1>
+
+<input type="text" value="{{ name }}" (input)="getName($event)" placeholder="Enter text" />
+
+<br />
+<br />
+
+<button (click)="showName()">Get Value</button>
+
+<br />
+<br />
+
+<button (click)="setName()">Set Value</button>
+
+<hr />
+
+<h1>Email: {{ email }}</h1>
+<input type="text" placeholder="Enter Email" #emailField />
+<button (click)="getEmail(emailField.value)">Get Email</button>
+<button (click)="setEmail()">Set Email</button>
