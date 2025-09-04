@@ -26,8 +26,17 @@
 <!-- <input type="text" (blur)="handleEvent($event) (focus)="handleEvent($event)"
 (input)="handleEvent($event)" name="User" /> -->
 
+<!-- <style>
+  h2 {
+    background-color: rgb(0, 255, 21);
+    padding: 20px;
+  }
+</style>
+
 <h1>Get and Set Input Field</h1>
 <h1>User Name: {{ displayName }}</h1>
+
+<h2 style="color: crimson">Hi, Tapas How are you?</h2>
 
 <input type="text" value="{{ name }}" (input)="getName($event)" placeholder="Enter text" />
 
@@ -47,3 +56,80 @@
 <input type="text" placeholder="Enter Email" #emailField />
 <button (click)="getEmail(emailField.value)">Get Email</button>
 <button (click)="setEmail()">Set Email</button>
+<app-profile></app-profile> -->
+
+<!-- @if(display) {
+<div style="background-color: red; height: 100px; width: 100px"></div>
+} 
+@else {
+<div style="background-color: green; height: 100px; width: 100px"></div>
+}
+
+<button (click)="toggleDisplay()">Toggle</button> -->
+
+<!-- <h1>Else if | Control flow</h1>
+
+<button (click)="setColor(1)">Red</button>
+<button (click)="setColor(2)">Green</button>
+<button (click)="setColor(3)">Blue</button>
+<button (click)="setColor(4)">Other</button>
+<input (input)="handleInput($event)" placeholder="Enter Color Number" type="text" />
+@if(color == 1) {
+<div style="background-color: red; height: 200px; width: 200px"></div>
+} @else if(color == 2) {
+<div style="background-color: green; height: 200px; width: 200px"></div>
+} @else if(color == 3) {
+<div style="background-color: blue; height: 200px; width: 200px"></div>
+} @else {
+<div style="background-color: black; height: 200px; width: 200px"></div>
+} -->
+
+<!-- <h1>Switch Case</h1>
+
+<button (click)="handleColor('red')">Red</button>
+<button (click)="handleColor('green')">Green</button>
+<button (click)="handleColor('blue')">Blue</button>
+<button (click)="handleColor('other')">Other</button>
+<input type="text" (input)="handleInput($event)" placeholder="Enter Color" />
+@switch(color) { @case('red') {
+<div style="background-color: red; height: 200px; width: 200px"></div>
+} @case('green') {
+<div style="background-color: green; height: 200px; width: 200px"></div>
+} @case('blue') {
+<div style="background-color: blue; height: 200px; width: 200px"></div>
+} @default {
+<div style="background-color: black; height: 200px; width: 200px"></div>
+} } -->
+
+<!-- <h1>For Loop</h1>
+
+@for(user of users; track user) {
+<h2>{{ user }}</h2>
+}
+
+<hr />
+
+@for(student of students; track student.name; let id=$index) {
+<h2>
+  {{ student.name }} - {{ student.age }} - {{ id }}
+  <button (click)="getName(student.name)">Get Name</button>
+</h2>
+} -->
+
+<!-- <h1>Signal</h1>
+
+<h1>{{ x }}</h1>
+
+<h1>{{ val() }}</h1> -->
+
+<!-- <button (click)="val.set(100)">Increment</button> -->
+
+<!-- <button (click)="incrementVal()">Increment</button> -->
+
+<!-- <button (click)="updateVal()">Update Value</button> -->
+
+<button (click)="val.set(val() + 1)">Increment</button>
+
+<h1>{{ val() }}</h1>
+
+<button (click)="val.set(val() - 1)">Decrement</button>
