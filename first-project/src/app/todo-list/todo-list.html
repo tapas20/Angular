@@ -1,0 +1,15 @@
+<h1 class="heading">This is a todo-list project</h1>
+
+<div class="container">
+  <input [(ngModel)]="task" class="input" type="text" placeholder="Enter a todo" />
+  <button (click)="addTask()" class="btn">Add Todo</button>
+</div>
+
+<div class="TaskList">
+  @for(task of taskList; track task.id) {
+  <ul class="list">
+    <li>{{ task.task }}</li>
+    <button (click)="deleteTask(task.id)" >Delete</button>
+  </ul>
+  }
+</div>

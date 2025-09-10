@@ -1,0 +1,4 @@
+<!-- <h1 style="background-color: red; color: white">Dynamic Style</h1> -->
+
+<h1 [style.background-color]="color" [style.color]="textColor">Dynamic Style</h1>
+<button (click)="changeStyle()">{{ mode ? 'Light' : 'Dark' }}</button>

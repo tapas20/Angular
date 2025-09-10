@@ -1,0 +1,19 @@
+<!-- <h1 *ngIf="show">IF Directives</h1>
+<button (click)="toggleShow()">Toggle</button> -->
+
+<h1>*ngFor Directives</h1>
+<!-- <div>
+  <ul>
+    <li *ngFor="let user of users">
+      {{ user }}
+    </li>
+  </ul>
+</div> -->
+
+<div>
+  <ul>
+    <li *ngFor="let user of usersData">
+      Name: {{ user.name }}, Age: {{ user.age }}, Job: {{ user.job }}
+    </li>
+  </ul>
+</div>
